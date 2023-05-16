@@ -1,0 +1,35 @@
+package org.bukkit.craftbukkit.v1_19_R3.entity;
+
+import com.google.common.base.Preconditions;
+import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.GlowSquid;
+
+public class CraftGlowSquid extends CraftSquid implements GlowSquid {
+   public CraftGlowSquid(CraftServer server, net.minecraft.world.entity.GlowSquid entity) {
+      super(server, entity);
+   }
+
+   public net.minecraft.world.entity.GlowSquid getHandle() {
+      return (net.minecraft.world.entity.GlowSquid)super.getHandle();
+   }
+
+   @Override
+   public EntityType getType() {
+      return EntityType.GLOW_SQUID;
+   }
+
+   @Override
+   public String toString() {
+      return "CraftGlowSquid";
+   }
+
+   public int getDarkTicksRemaining() {
+      return this.getHandle().w();
+   }
+
+   public void setDarkTicksRemaining(int darkTicksRemaining) {
+      Preconditions.checkArgument(darkTicksRemaining >= 0, "darkTicksRemaining must be >= 0");
+      this.getHandle().c(darkTicksRemaining);
+   }
+}

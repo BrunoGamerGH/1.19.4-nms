@@ -1,0 +1,111 @@
+package net.minecraft.tags;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.MinecraftKey;
+import net.minecraft.world.item.Item;
+
+public final class TagsItem {
+   public static final TagKey<Item> a = a("wool");
+   public static final TagKey<Item> b = a("planks");
+   public static final TagKey<Item> c = a("stone_bricks");
+   public static final TagKey<Item> d = a("wooden_buttons");
+   public static final TagKey<Item> e = a("buttons");
+   public static final TagKey<Item> f = a("wool_carpets");
+   public static final TagKey<Item> g = a("wooden_doors");
+   public static final TagKey<Item> h = a("wooden_stairs");
+   public static final TagKey<Item> i = a("wooden_slabs");
+   public static final TagKey<Item> j = a("wooden_fences");
+   public static final TagKey<Item> k = a("fence_gates");
+   public static final TagKey<Item> l = a("wooden_pressure_plates");
+   public static final TagKey<Item> m = a("wooden_trapdoors");
+   public static final TagKey<Item> n = a("doors");
+   public static final TagKey<Item> o = a("saplings");
+   public static final TagKey<Item> p = a("logs_that_burn");
+   public static final TagKey<Item> q = a("logs");
+   public static final TagKey<Item> r = a("dark_oak_logs");
+   public static final TagKey<Item> s = a("oak_logs");
+   public static final TagKey<Item> t = a("birch_logs");
+   public static final TagKey<Item> u = a("acacia_logs");
+   public static final TagKey<Item> v = a("cherry_logs");
+   public static final TagKey<Item> w = a("jungle_logs");
+   public static final TagKey<Item> x = a("spruce_logs");
+   public static final TagKey<Item> y = a("mangrove_logs");
+   public static final TagKey<Item> z = a("crimson_stems");
+   public static final TagKey<Item> A = a("warped_stems");
+   public static final TagKey<Item> B = a("bamboo_blocks");
+   public static final TagKey<Item> C = a("wart_blocks");
+   public static final TagKey<Item> D = a("banners");
+   public static final TagKey<Item> E = a("sand");
+   public static final TagKey<Item> F = a("smelts_to_glass");
+   public static final TagKey<Item> G = a("stairs");
+   public static final TagKey<Item> H = a("slabs");
+   public static final TagKey<Item> I = a("walls");
+   public static final TagKey<Item> J = a("anvil");
+   public static final TagKey<Item> K = a("rails");
+   public static final TagKey<Item> L = a("leaves");
+   public static final TagKey<Item> M = a("trapdoors");
+   public static final TagKey<Item> N = a("small_flowers");
+   public static final TagKey<Item> O = a("beds");
+   public static final TagKey<Item> P = a("fences");
+   public static final TagKey<Item> Q = a("tall_flowers");
+   public static final TagKey<Item> R = a("flowers");
+   public static final TagKey<Item> S = a("piglin_repellents");
+   public static final TagKey<Item> T = a("piglin_loved");
+   public static final TagKey<Item> U = a("ignored_by_piglin_babies");
+   public static final TagKey<Item> V = a("piglin_food");
+   public static final TagKey<Item> W = a("fox_food");
+   public static final TagKey<Item> X = a("gold_ores");
+   public static final TagKey<Item> Y = a("iron_ores");
+   public static final TagKey<Item> Z = a("diamond_ores");
+   public static final TagKey<Item> aa = a("redstone_ores");
+   public static final TagKey<Item> ab = a("lapis_ores");
+   public static final TagKey<Item> ac = a("coal_ores");
+   public static final TagKey<Item> ad = a("emerald_ores");
+   public static final TagKey<Item> ae = a("copper_ores");
+   public static final TagKey<Item> af = a("non_flammable_wood");
+   public static final TagKey<Item> ag = a("soul_fire_base_blocks");
+   public static final TagKey<Item> ah = a("candles");
+   public static final TagKey<Item> ai = a("dirt");
+   public static final TagKey<Item> aj = a("terracotta");
+   public static final TagKey<Item> ak = a("completes_find_tree_tutorial");
+   public static final TagKey<Item> al = a("boats");
+   public static final TagKey<Item> am = a("chest_boats");
+   public static final TagKey<Item> an = a("fishes");
+   public static final TagKey<Item> ao = a("signs");
+   public static final TagKey<Item> ap = a("music_discs");
+   public static final TagKey<Item> aq = a("creeper_drop_music_discs");
+   public static final TagKey<Item> ar = a("coals");
+   public static final TagKey<Item> as = a("arrows");
+   public static final TagKey<Item> at = a("lectern_books");
+   public static final TagKey<Item> au = a("bookshelf_books");
+   public static final TagKey<Item> av = a("beacon_payment_items");
+   public static final TagKey<Item> aw = a("stone_tool_materials");
+   public static final TagKey<Item> ax = a("stone_crafting_materials");
+   public static final TagKey<Item> ay = a("freeze_immune_wearables");
+   public static final TagKey<Item> az = a("axolotl_tempt_items");
+   public static final TagKey<Item> aA = a("dampens_vibrations");
+   public static final TagKey<Item> aB = a("cluster_max_harvestables");
+   public static final TagKey<Item> aC = a("compasses");
+   public static final TagKey<Item> aD = a("hanging_signs");
+   public static final TagKey<Item> aE = a("creeper_igniters");
+   public static final TagKey<Item> aF = a("noteblock_top_instruments");
+   public static final TagKey<Item> aG = a("trimmable_armor");
+   public static final TagKey<Item> aH = a("trim_materials");
+   public static final TagKey<Item> aI = a("trim_templates");
+   public static final TagKey<Item> aJ = a("sniffer_food");
+   public static final TagKey<Item> aK = a("decorated_pot_shards");
+   public static final TagKey<Item> aL = a("swords");
+   public static final TagKey<Item> aM = a("axes");
+   public static final TagKey<Item> aN = a("hoes");
+   public static final TagKey<Item> aO = a("pickaxes");
+   public static final TagKey<Item> aP = a("shovels");
+   public static final TagKey<Item> aQ = a("tools");
+   public static final TagKey<Item> aR = a("breaks_decorated_pots");
+
+   private TagsItem() {
+   }
+
+   private static TagKey<Item> a(String var0) {
+      return TagKey.a(Registries.C, new MinecraftKey(var0));
+   }
+}
