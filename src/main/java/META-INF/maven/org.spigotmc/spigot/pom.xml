@@ -303,7 +303,7 @@
                         <id>ex-spigot</id>
                         <configuration>
                             <format>${bt.name}-Spigot-%s</format>
-                            <scmDirectory>../</scmDirectory>
+                            <scmDirectory>..</scmDirectory>
                             <descriptionProperty>spigot.desc</descriptionProperty>
                         </configuration>
                         <phase>initialize</phase>
